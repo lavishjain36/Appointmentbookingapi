@@ -79,4 +79,6 @@ public class AppointmentService {
         return appointmentRepository.findWithLockById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Appointment not found"));
     }
+
+
 }
